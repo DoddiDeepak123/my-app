@@ -6,7 +6,9 @@ import Content from './ReactComponents/Content';
 import Footer from './ReactComponents/Footer';
 import Welcome from './ReactComponents/Welcome';
 import LifeCyclesMethods from './lifecyclemethods/lifecyclemethod';
-
+ import ConditionallyRenderingComponent from './day7/ConditionalRenderingComponent';
+ import Login from '../src/loginpage/loginpage';
+ import Register from '../src/loginpage/Registerpage';
 //import ReuseableButton from './ReuseableButton';
 //import Button from './Button';
 //import ParentComponent from './ParentComponent';
@@ -37,6 +39,7 @@ function Footer() {
 */
 
 function App() {
+    const login = false; 
   return (
     <div className="App">
       {/* <Header />
@@ -57,10 +60,14 @@ function App() {
       <footer>
         <p styles={{ backgroundColor: 'yellow', height: '50px' }}> This is a sample footer for the React App</p>
       </footer> */}
-        <Welcome />
-        <Header />
+       {/* <Welcome /> */}
+       {/* <Header />
         <Content />
-        <Footer />
+        <Footer /> */}
+
+         <div>
+      {login ? <Login /> : <Register />}
+    </div>
     </div>
   );
 }
