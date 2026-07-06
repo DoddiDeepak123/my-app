@@ -1,13 +1,12 @@
 import React from "react";
 
 function Login() {
-  const handleLogin = (e) => {
+  const submitlogin= (e) => {
     e.preventDefault();
-    alert("Login button clicked!");
   };
 
   return (
-    <form onSubmit={handleLogin}>
+    <form onSubmit={submitlogin}>
       <h2>Login</h2>
       <div>
         <label>Email:</label>

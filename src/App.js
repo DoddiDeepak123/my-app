@@ -17,6 +17,7 @@ import LifeCyclesMethods from './lifecyclemethods/lifecyclemethod';
 //import Button from './Button';
 // import ParentComponent from './ParentComponent';
 // import GreetingMessage from '../src/Jsx/GreentingMessage';
+import AppRouter from './day8Routing/AppRouter';
 
 
 
@@ -65,9 +66,10 @@ function App() {
         <Content />
         <Footer /> */}
 
-         <div>
+         {/*<div>
       {login ? <Login /> : <Register />}
-    </div>
+    </div> */}
+    <AppRouter />
     </div>
   );
 }

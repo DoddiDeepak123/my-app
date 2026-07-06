@@ -1,13 +1,13 @@
 import React from "react";
 
 function Register() {
-  const handleRegister = (e) => {
+  const submitRegister = (e) => {
     e.preventDefault();
     alert("Register button clicked!");
   };
 
   return (
-    <form onSubmit={handleRegister}>
+    <form onSubmit={submitRegister}>
       <h2>Register</h2>
       <div>
         <label>First Name:</label>
@@ -28,11 +28,10 @@ function Register() {
       </div>
       <div>
         <label>RetypePassword:</label>
-        <input type="text" placeholder="Retype your password" />
+        <input type="password" placeholder="Retype your password" />
       </div>
       <button type="submit">Sign In</button>
     </form>
   );
 }
-
 export default Register;
