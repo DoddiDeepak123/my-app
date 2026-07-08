@@ -1,13 +1,19 @@
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Notfound.css";
 
-function Notfound() {
-    return (
-        <div>
-            <h1>404 - Page Not Found</h1>
-            <Link to="/">Go to Home</Link>
-            <img src="https://lh3.googleusercontent.com/wlilI1WBxzBBvwzG3GDGEoINBwsEaLg4lmph02XVbs0ii0QDWfWEZmmXMPUH0uE_XATZD7NujZZSZ6fbZzSShXGm4Naf6MA1xD_wTXbeQ6zq8Fap31T3lcSRf8IVKoiJmr6ydqLeSmOP5TThRDPDF4I" alt="404 not found" width="800" height="400" />
-        </div>
-    );
-}
+const NotFound = () => {
+  return (
+    <div className="notfound-container">
+      <h1 className="notfound-title">404</h1>
+      <h2 className="notfound-subtitle">Page Not Found</h2>
+      <p className="notfound-text">
+        Oops! The page you are looking for doesn’t exist or has been moved.
+      </p>
+      <a href="/" className="notfound-button">
+        Go Back Home
+      </a>
+    </div>
+  );
+};
 
-export default Notfound;  
+export default NotFound;

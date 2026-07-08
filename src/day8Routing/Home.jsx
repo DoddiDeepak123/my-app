@@ -1,10 +1,22 @@
+import React from 'react';
+import "./Home.css";
+
 function Home() {
     return (
-        <div>
-            <h1>Home Page</h1>
-            <p>Welcome to the home page!</p>
-            <img src="https://s3-alpha.figma.com/hub/file/2836303046/c5290ab7-b775-4d1c-b14f-e86f7c0754b4-cover.png" alt="Home"
-            width="1000" height="500" />
+        <div className="homepage">
+         <header className='header'>
+        <div className="logo">Freshbooks</div>
+        <nav className="nav">
+            <a href="#">Accountants</a>
+            <a href="#">Pricing</a>
+            <a href="#">Login</a>
+            <button className="signup-button">Sign Up Free</button>
+        </nav>
+       </header>
+       <main className="main-content">
+         <h1>Welcome to Freshbooks</h1>
+         <p>Your accounting software for small businesses.</p>
+       </main>
         </div>
     );
 }
